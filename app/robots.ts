@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
+import { getPublicSiteUrl } from "@/lib/publicSiteUrl";
 
-const base =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://janin-sport-cafe.vercel.app";
+const base = getPublicSiteUrl();
 
 export default function robots(): MetadataRoute.Robots {
   return {

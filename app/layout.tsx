@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
+import { getPublicSiteUrl } from "@/lib/publicSiteUrl";
 import { company } from "@/lib/site";
 
 const fraunces = Fraunces({
@@ -18,7 +19,7 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://janin-sport-cafe.vercel.app";
+const siteUrl = getPublicSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

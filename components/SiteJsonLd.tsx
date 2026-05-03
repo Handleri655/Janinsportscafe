@@ -1,8 +1,7 @@
+import { getPublicSiteUrl } from "@/lib/publicSiteUrl";
 import { company, locations, phones } from "@/lib/site";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://janin-sport-cafe.vercel.app";
+const siteUrl = getPublicSiteUrl();
 
 export function SiteJsonLd() {
   const graph = [
