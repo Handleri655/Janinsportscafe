@@ -37,3 +37,14 @@ body {
 .text-balance {
   text-wrap: balance;
 }
+
+/* Horizontal nav scroll on narrow screens */
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

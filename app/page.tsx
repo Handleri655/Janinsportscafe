@@ -18,15 +18,15 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/85 to-brand-950/55" />
         </div>
-        <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 py-20 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16 lg:px-8 lg:py-28">
-          <div className="max-w-xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-soft">
+        <div className="relative mx-auto flex max-w-6xl flex-col gap-8 px-4 py-14 sm:gap-10 sm:px-6 sm:py-20 lg:flex-row lg:items-end lg:justify-between lg:gap-16 lg:px-8 lg:py-28">
+          <div className="max-w-xl min-w-0">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-soft sm:text-sm sm:tracking-[0.2em]">
               Helsinki · Pirkkola & Maunula
             </p>
-            <h1 className="mt-4 font-display text-4xl leading-[1.08] tracking-tight text-cream-50 text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="mt-3 font-display text-[clamp(1.65rem,6.5vw,3.65rem)] leading-[1.06] tracking-tight text-cream-50 text-balance sm:mt-4 sm:text-5xl lg:text-6xl">
               Lounasta, peliä ja hyvää fiilistä
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-cream-100/92">
+            <p className="mt-5 text-base leading-relaxed text-cream-100/92 sm:mt-6 sm:text-lg">
               Uimahallin lounasravintola Pirkkolassa ja sporttibaari Maunulassa — sama lämmin
               palvelu, kaksi eri tunnelmaa.
             </p>
